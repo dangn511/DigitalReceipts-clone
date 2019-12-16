@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    tools:context=".MainActivity.MainActivity">
+
+    <TextView
+        android:id="@+id/receiptDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginRight="100dp"
+        android:gravity="center"
+        android:text="No Receipt Uploaded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gif_loading" />
+
+    <Button
+        android:id="@+id/galleryButton"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:text="Upload Receipt"
+        android:textSize="12sp"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="@id/receiptDisplay"
+        app:layout_constraintRight_toRightOf="@id/receiptDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/receiptDisplay" />
+
+    <Button
+        android:id="@+id/cameraButton"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_background"
+        android:text="Take Photo"
+        android:textSize="12sp"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="@id/receiptDisplay"
+        app:layout_constraintRight_toRightOf="@id/receiptDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/galleryButton" />
+
+    <ImageView
+        android:id="@+id/gif_loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/receiptDisplay"
+        app:srcCompat="@drawable/app_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

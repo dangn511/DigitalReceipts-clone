@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Apply default style for dialogs -->
+        <item name="android:dialogTheme">@style/AppDialogTheme</item>
+        <!-- Apply default style for alert dialogs -->
+        <item name="android:alertDialogTheme">@style/AppAlertTheme</item>
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+
+    </style>
+    <style name="Animation">
+        <item name="android:windowEnterAnimation">@anim/fadein</item>
+        <item name="android:windowExitAnimation">@anim/fadeout</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+    <style name="Divider">
+        <item name="android:layout_width">400dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <!-- Define your custom dialog theme here extending from base -->
+<style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+<!-- Define color properties as desired -->
+<item name="colorPrimary">@color/colorPrimary</item>
+<item name="colorPrimaryDark">#000</item>
+<item name="android:textColorHighlight">@color/text_primary</item>
+<item name="colorAccent">@color/colorPrimary</item>
+<item name="colorControlNormal">@color/colorPrimary</item>
+<!-- Define window properties as desired -->
+<item name="android:windowNoTitle">false</item>
+<item name="android:windowFullscreen">false</item>
+<item name="android:windowBackground">@color/bgcolor</item>
+<item name="android:windowIsFloating">true</item>
+<item name="android:windowCloseOnTouchOutside">true</item>
+</style>
+
+    <!-- Define your custom alert theme here extending from base -->
+<style name="AppAlertTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+<item name="colorPrimary">@color/text_primary</item>
+<item name="colorAccent">@color/colorPrimary</item>
+<item name="colorPrimaryDark">#000</item>
+<item name="colorControlNormal">@color/colorPrimary</item>
+<item name="android:textColorHighlight">@color/text_primary</item>
+</style>
+
+    </resources>
